@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>600</width>
+    <height>400</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>EnglishDictionaryClient</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+	background-color: #7B7C81;
+}
+
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="3" column="0" colspan="4">
+     <widget class="QTableView" name="tbDataBase">
+      <property name="styleSheet">
+       <string notr="true">QTableView
+ { 
+	background-color: lightgray;
+	color: black;
+	border: 2px solid black;
+ }
+
+ QTableView::item 
+{
+	height: 40px; 
+}
+
+QTableView::item:selected 
+{ 
+	background-color: blue;
+	color: white;
+}
+
+QHeaderView::section {
+	 background-color: #D4DBE2;
+ }
+
+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1" colspan="2">
+     <widget class="QLineEdit" name="leIP">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QLineEdit {
+   background-color: white;
+   color: black; 
+   border: 2px solid #1D0F0F; 
+   border-radius: 6px; 
+   padding: 2; 
+}
+
+</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="3">
+     <widget class="QPushButton" name="btnConnect">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   background-color: #7B586B; 
+   color: white; 
+   border: 2px solid #1D0F0F; 
+   border-radius: 8px; 
+   padding: 3; }
+
+QPushButton:pressed { 
+	background-color: #D4DBE2;
+ }</string>
+      </property>
+      <property name="text">
+       <string>Connect</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QLabel" name="lIP">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="minimumSize">
+       <size>
+        <width>20</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>11</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>IP:</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="2">
+     <widget class="QPushButton" name="btnRemove">
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+   background-color: #7B586B; 
+   color: white; 
+   border: 2px solid #1D0F0F; 
+   border-radius: 8px; 
+   padding: 3; }
+
+QPushButton:pressed { 
+	background-color: #D4DBE2;
+ }</string>
+      </property>
+      <property name="text">
+       <string>Remove</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>600</width>
+     <height>22</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
